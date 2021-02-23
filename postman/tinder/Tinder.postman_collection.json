@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tinder",
+		"_postman_id": "63db2afb-7dac-8b43-a57b-906ca21eeed7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show all People cards",
+			"request": {
+				"url": "http://localhost:8000/tinder/card",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n      \"name\": \"Elon Musk\",\n      \"imgURL\":\n        \"https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg\"\n    },\n    {\n      \"name\": \"Jeff Bezos\",\n      \"imgURL\": \"https://www.gstatic.com/tv/thumb/persons/532529/532529_v9_bb.jpg\"\n    }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post a new card record",
+			"request": {
+				"url": "http://localhost:8000/tinder/card",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n      \"name\": \"Elon Musk\",\n      \"imgURL\":\n        \"https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg\"\n    },\n    {\n      \"name\": \"Jeff Bezos\",\n      \"imgURL\": \"https://www.gstatic.com/tv/thumb/persons/532529/532529_v9_bb.jpg\"\n    }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
